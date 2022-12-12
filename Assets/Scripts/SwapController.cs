@@ -6,6 +6,7 @@ public class SwapController : MonoBehaviour
 {
     public Animator anim;
     public SwapTexture swapTexture;
+    public SwapTextureShader swapTextureShader;
 
     private void OnGUI()
     {
@@ -13,6 +14,12 @@ public class SwapController : MonoBehaviour
         {
             anim.SetTrigger("SwitchPose");
             swapTexture.Invoke("SwitchTexture", 0.3f);
+        }
+
+        if (GUI.Button(new Rect(10, 80, 200, 50), "Switch Shader Texture"))
+        {
+            swapTextureShader.SwitchTexture();
+            Debug.Log("CHANGE SHADER TEXTURE");
         }
     }
 

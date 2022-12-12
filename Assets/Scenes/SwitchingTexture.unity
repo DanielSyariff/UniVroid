@@ -640,6 +640,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1216748937}
   - component: {fileID: 1216748939}
+  - component: {fileID: 1216748940}
   - component: {fileID: 1216748938}
   m_Layer: 0
   m_Name: SwitchingManager
@@ -710,6 +711,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 1240771151}
   swapTexture: {fileID: 1216748938}
+  swapTextureShader: {fileID: 1216748940}
+--- !u!114 &1216748940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216748936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ca3642510df5f49831374068b86233, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textureSwapper:
+  - name: Top
+    mat: {fileID: 2100000, guid: 89ab4c7594dd1a545b56dbb1e6ec7ea7, type: 2}
+    texture_1: {fileID: 2800000, guid: d4554eaaac5b84a40b2bd8c727bf648a, type: 3}
+    texture_2: {fileID: 2800000, guid: 5dbc717ab0f3ee342a15566d4a893f5d, type: 3}
+  - name: Body
+    mat: {fileID: 2100000, guid: 2d8a3da75f03f724c880d775e449fef3, type: 2}
+    texture_1: {fileID: 2800000, guid: c36e3a7fddda1934997537539e75d8e6, type: 3}
+    texture_2: {fileID: 2800000, guid: 26c971e74b7c66f4b882d67d42ea4b3a, type: 3}
+  - name: Shoes
+    mat: {fileID: 2100000, guid: 224490cd9f659c34aaf04e7531a20a71, type: 2}
+    texture_1: {fileID: 2800000, guid: 6a6fc1f1d121f904291ece9a52f7041c, type: 3}
+    texture_2: {fileID: 2800000, guid: b705400ea6342cd44bcf8b3adb5d6051, type: 3}
+  textureIndex: 1
 --- !u!95 &1240771151 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2847744694165774197, guid: cc3db1bf8be11ae43b7b08bcf3fae5fd,

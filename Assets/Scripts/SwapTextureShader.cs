@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwapTexture : MonoBehaviour
+
+
+public class SwapTextureShader : MonoBehaviour
 {
     [System.Serializable]
     public struct TextureSwapper
@@ -23,8 +25,8 @@ public class SwapTexture : MonoBehaviour
         {
             foreach (var item_swap in textureSwapper)
             {
-                item_swap.mat.SetTexture("_MainTex", item_swap.texture_2);
-                item_swap.mat.SetTexture("_ShadeTexture", item_swap.texture_2);
+                item_swap.mat.SetTexture("_MainTex2", item_swap.texture_2);
+                item_swap.mat.SetTexture("_ShadeTexture2", item_swap.texture_2);
             }
 
             textureIndex = 2;
@@ -33,8 +35,8 @@ public class SwapTexture : MonoBehaviour
         {
             foreach (var item_swap in textureSwapper)
             {
-                item_swap.mat.SetTexture("_MainTex", item_swap.texture_1);
-                item_swap.mat.SetTexture("_ShadeTexture", item_swap.texture_1);
+                item_swap.mat.SetTexture("_MainTex2", item_swap.texture_1);
+                item_swap.mat.SetTexture("_ShadeTexture2", item_swap.texture_1);
             }
 
             textureIndex = 1;
