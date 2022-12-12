@@ -21,6 +21,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - MainTex:
+        m_Texture: {fileID: 2800000, guid: 2283cf1bc01798a439326f30b659ef60, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - MainTex2:
+        m_Texture: {fileID: 2800000, guid: 6a6fc1f1d121f904291ece9a52f7041c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - Texture2D_3C3073E0:
         m_Texture: {fileID: 2800000, guid: 6a6fc1f1d121f904291ece9a52f7041c, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -38,6 +46,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 2283cf1bc01798a439326f30b659ef60, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
         m_Texture: {fileID: 2800000, guid: 6a6fc1f1d121f904291ece9a52f7041c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -55,6 +67,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _ShadeTexture:
         m_Texture: {fileID: 2800000, guid: 2283cf1bc01798a439326f30b659ef60, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ShadeTexture2:
+        m_Texture: {fileID: 2800000, guid: 6a6fc1f1d121f904291ece9a52f7041c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ShadeTexture_1:
